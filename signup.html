@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
     <div class="container">
@@ -13,6 +13,10 @@
         <div class="input-field">
           <i class="fa-solid fa-user"></i>
           <input type="text" name="name" id="name" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" name="email" id="email" placeholder="Email" />
         </div>
         <div class="input-field">
           <i class="fa-solid fa-lock"></i>
@@ -23,17 +27,17 @@
             placeholder="********"
           />
         </div>
-        <input type="submit" value="SIGN IN" />
+        <input type="submit" value="SIGN UP" />
       </div>
     </div>
     <h5>
-      Not a member?<a href="#" id="signup-link">Sign up now</a
+      Already a member?<a href="#" id="link-redirect">Sign in now</a
       ><i class="fa-sharp fa-solid fa-arrow-right"></i>
     </h5>
     <script
       src="https://kit.fontawesome.com/bb389d468f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/signup.js"></script>
   </body>
 </html>
