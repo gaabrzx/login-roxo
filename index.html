@@ -5,15 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Login</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/folder.png"
+      type="image/x-icon"
+    />
+    <title>Tela de Login | Básica</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="firstSection">
       <div class="inputs">
         <div class="input-field">
           <i class="fa-solid fa-user"></i>
           <input type="text" name="name" id="name" placeholder="Username" />
         </div>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+          />
+        </div>
+        <input type="submit" value="SIGN UP" />
+      </div>
+      <h5 id="notContainer">
+        Already a member?<a id="firstLink">Sign in now</a
+        ><i class="fa-sharp fa-solid fa-arrow-right"></i>
+      </h5>
+    </div>
+    <div class="container" style="display: none" id="secondSection">
+      <div class="inputs">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="name" placeholder="Username" />
+        </div>
+        <div class="input-field"></div>
         <div class="input-field">
           <i class="fa-solid fa-lock"></i>
           <input
@@ -25,11 +57,12 @@
         </div>
         <input type="submit" value="SIGN IN" />
       </div>
+      <h5 id="notContainer">
+        Not a member?<a id="secondLink">Sign up now</a
+        ><i class="fa-sharp fa-solid fa-arrow-right"></i>
+      </h5>
     </div>
-    <h5>
-      Not a member?<a href="#" id="signup-link">Sign up now</a
-      ><i class="fa-sharp fa-solid fa-arrow-right"></i>
-    </h5>
+
     <script
       src="https://kit.fontawesome.com/bb389d468f.js"
       crossorigin="anonymous"

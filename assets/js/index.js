@@ -1,5 +1,18 @@
-const link = document.getElementById("signup-link");
+const firstSection = document.getElementById("firstSection");
+const secondSection = document.getElementById("secondSection");
 
-link.addEventListener("click", function () {
-  window.location = "signup.html";
-});
+const registerButton = document
+  .getElementById("firstLink")
+  .addEventListener("click", function () {
+    firstSection.style.display = "none";
+    secondSection.style.display = "flex";
+  });
+
+const loginButton = document
+  .getElementById("secondLink")
+  .addEventListener("click", function () {
+    firstSection.style.display = "flex";
+    secondSection.style.display = "none";
+  });
+
+console.log("SIM");

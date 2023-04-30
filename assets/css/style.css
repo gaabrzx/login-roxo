@@ -76,3 +76,11 @@ h5 {
   gap: 10px;
   color: #7e7e7e;
 }
+
+#notContainer {
+  margin-top: 10px;
+}
+
+#notContainer a {
+  cursor: pointer;
+}
