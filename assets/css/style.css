@@ -77,10 +77,16 @@ h5 {
   color: #7e7e7e;
 }
 
-#notContainer {
+#notContainer,
+#notContainer2 {
   margin-top: 10px;
 }
 
-#notContainer a {
+#notContainer a,
+#notContainer2 {
   cursor: pointer;
+}
+
+#notContainer2 {
+  display: none;
 }

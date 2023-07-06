@@ -1,18 +1,17 @@
-const firstSection = document.getElementById("firstSection");
-const secondSection = document.getElementById("secondSection");
+const email = document.querySelector("#input-email");
+const link = document.querySelector("#notContainer a");
+const link2 = document.querySelector("#notContainer2 a");
+const container = document.querySelector("#notContainer");
+const containerLogin = document.querySelector("#notContainer2");
 
-const registerButton = document
-  .getElementById("firstLink")
-  .addEventListener("click", function () {
-    firstSection.style.display = "none";
-    secondSection.style.display = "flex";
-  });
+link.addEventListener("click", () => {
+  email.style.display = "none";
+  container.style.display = "none";
+  containerLogin.style.display = "block";
+});
 
-const loginButton = document
-  .getElementById("secondLink")
-  .addEventListener("click", function () {
-    firstSection.style.display = "flex";
-    secondSection.style.display = "none";
-  });
-
-console.log("SIM");
+link2.addEventListener("click", () => {
+  email.style.display = "flex";
+  container.style.display = "block";
+  containerLogin.style.display = "none";
+});
