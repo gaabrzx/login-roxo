@@ -51,6 +51,11 @@ body {
   text-align: right;
   text-decoration: none;
   margin: 10px 0px;
+  color: var(--button-color);
+}
+
+#forgotLink:hover {
+  text-decoration: underline;
 }
 
 .input-field i {
@@ -63,8 +68,8 @@ body {
 #loginButton {
   background-color: var(--button-color);
   color: var(--white-color);
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -75,4 +80,47 @@ body {
   --gray-color: #cfd4d8;
   --white-color: #fff;
   --button-color: #157aff;
+}
+
+.buttons-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.buttons-div button {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 5px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.buttons-div button img {
+  height: 20px;
+}
+
+#lastParagraph {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#lastParagraph a {
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+#lastParagraph a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: 25px;
+  height: 5px;
+  background-color: #909090;
+  border: 0;
+  border-radius: 5px;
 }
