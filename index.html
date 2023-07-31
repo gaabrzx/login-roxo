@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link
-      rel="shortcut icon"
-      href="assets/img/folder.png"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <title>Tela de Login | Básica</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tela de Login | Sistema</title>
   </head>
   <body>
-    <div class="container" id="firstSection">
-      <div class="inputs">
-        <div class="input-field">
-          <i class="fa-solid fa-user"></i>
-          <input type="text" name="name" id="name" placeholder="Username" />
-        </div>
-        <div class="input-field" id="input-email">
-          <i class="fa-solid fa-envelope"></i>
-          <input type="email" name="email" id="email" placeholder="Email" />
-        </div>
-        <div class="input-field">
-          <i class="fa-solid fa-lock"></i>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="********"
-          />
-        </div>
-        <input type="submit" value="SIGN UP" />
+    <div class="content">
+      <h1>Welcome Back!</h1>
+      <p class="manage">Start managing your finance faster and better</p>
+      <div class="input-field" id="input-box">
+        <i class="fa-solid fa-envelope"></i>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="you@example.com"
+        />
       </div>
-      <h5 id="notContainer">
-        Already a member?<a id="firstLink">Sign in now</a
-        ><i class="fa-sharp fa-solid fa-arrow-right"></i>
-      </h5>
-      <h5 id="notContainer2">
-        Already a member?<a id="firstLink">Sign in now</a
-        ><i class="fa-sharp fa-solid fa-arrow-right"></i>
-      </h5>
+      <div class="input-field">
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="At least 8 characters"
+        />
+      </div>
+      <a href="#" id="forgotLink">Forgot your password?</a>
+      <button id="loginButton">Login</button>
+      <hr />
+      <div class="buttons-div">
+        <button>Google</button>
+        <button>Facebook</button>
+      </div>
+      <p>Do you have an account?</p>
+      <a href="#">Sign Up</a>
     </div>
-    <script
-      src="https://kit.fontawesome.com/bb389d468f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/index.js"></script>
   </body>
 </html>
